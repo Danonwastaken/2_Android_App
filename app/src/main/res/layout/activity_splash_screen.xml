@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/tvUpperWind"
+        android:layout_width="342dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="124dp"
+        android:layout_height="29dp"
+        android:text="@string/name_drivenext"
+        android:textColor="@color/stylishPurple"
+        android:textSize="24sp"
+        android:fontFamily="@font/font_montserrat"
+        android:textStyle="normal"
+        android:textFontWeight="600"
+        app:layout_constraintStart_toStartOf="@+id/tvUpperWind"
+        app:layout_constraintTop_toTopOf="@+id/tvUpperWind" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="342dp"
+        android:layout_height="17dp"
+        android:text="@string/desc_gettingstarted"
+        android:textColor="@color/gentleGrayText"
+        android:textSize="14sp"
+        android:fontFamily="@font/font_montserrat"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/tvUpperWind"
+        app:layout_constraintEnd_toEndOf="@+id/tvUpperWind"
+        app:layout_constraintStart_toStartOf="@+id/tvUpperWind" />
+
+    <ImageView
+        android:id="@+id/ivMainIcon"
+        android:layout_width="343dp"
+        android:layout_height="343dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="Main icon"
+        android:layout_marginTop="59dp"
+        android:src="@drawable/ic_splash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUpperWind"
+        tools:ignore="HardcodedText" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/checkInternet"
+        android:visibility="invisible"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:id="@+id/vwMainM"
+            android:layout_width="318dp"
+            android:layout_height="276dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="202dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivNoconM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="No Internet"
+            android:src="@drawable/ic_no_internet"
+            app:layout_constraintEnd_toEndOf="@+id/vwMainM"
+            app:layout_constraintStart_toStartOf="@+id/vwMainM"
+            app:layout_constraintTop_toTopOf="@+id/vwMainM"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tvNoconM"
+            android:layout_width="239dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/font_montserrat"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="22sp"
+            android:text="@string/desc_nointernet"
+            android:textColor="@color/grayText"
+            android:textFontWeight="600"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@+id/vwMainM"
+            app:layout_constraintStart_toStartOf="@+id/vwMainM"
+            app:layout_constraintTop_toBottomOf="@+id/ivNoconM" />
+
+        <TextView
+            android:id="@+id/tvCheckconM"
+            android:layout_width="318dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/font_montserrat"
+            android:gravity="center_horizontal"
+            android:text="@string/desc_checkinternet"
+            android:textColor="@color/grayText"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/vwMainM"
+            app:layout_constraintEnd_toEndOf="@+id/vwMainM"
+            app:layout_constraintStart_toStartOf="@+id/vwMainM"
+            app:layout_constraintTop_toBottomOf="@+id/tvNoconM" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbTryagainM"
+            android:layout_width="342dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="@color/stylishPurple"
+            android:fontFamily="@font/font_montserrat"
+            android:text="@string/button_tryagain"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:cornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vwMainM" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

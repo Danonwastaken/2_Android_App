@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/vwUpper"
+        android:layout_width="342dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/vwBigForm"
+        app:layout_constraintStart_toStartOf="@+id/vwBigForm"
+        app:layout_constraintTop_toTopOf="@+id/vwBigForm" />
+
+    <ImageButton
+        android:id="@+id/ibPrev"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@color/white"
+        android:contentDescription="Arrow before"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/vwUpper"
+        app:layout_constraintStart_toStartOf="@+id/vwUpper"
+        app:layout_constraintTop_toTopOf="@+id/vwUpper"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvCreateAccount"
+        android:layout_width="176dp"
+        android:layout_height="26dp"
+        android:fontFamily="@font/font_montserrat"
+        android:gravity="center_horizontal"
+        android:text="@string/desc_createaccount"
+        android:textColor="@color/grayText"
+        android:textFontWeight="600"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/vwUpper"
+        app:layout_constraintStart_toStartOf="@+id/vwUpper"
+        app:layout_constraintTop_toTopOf="@+id/vwUpper" />
+
+    <View
+        android:id="@+id/vwBigForm"
+        android:layout_width="342dp"
+        android:layout_height="415dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vwLowForm"
+        android:layout_width="342dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/vwBigForm"
+        app:layout_constraintStart_toStartOf="@+id/vwBigForm"
+        app:layout_constraintTop_toBottomOf="@+id/vwUpper" />
+
+    <View
+        android:id="@+id/vwMailL"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintEnd_toEndOf="@+id/vwBigForm"
+        app:layout_constraintStart_toStartOf="@+id/vwBigForm"
+        app:layout_constraintTop_toTopOf="@+id/vwLowForm" />
+
+    <TextView
+        android:id="@+id/tvMailL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_montserrat"
+        android:text="@string/desc_email"
+        android:textColor="@color/darkerGray"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/vwMailL"
+        app:layout_constraintTop_toTopOf="@+id/vwMailL" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etMail1"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        app:hintEnabled="false"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vwMailL"
+        app:layout_constraintEnd_toEndOf="@+id/vwMailL"
+        app:layout_constraintStart_toStartOf="@+id/vwMailL"
+        app:layout_constraintTop_toBottomOf="@+id/tvMailL">
+        <EditText
+            android:id="@+id/etMail11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_roundrect"
+            android:ems="15"
+            android:fontFamily="@font/font_montserrat"
+            android:hint="@string/hint_writeemail"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/anotherGray"
+            android:textFontWeight="500"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:paddingVertical="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/vwMailL"
+            app:layout_constraintEnd_toEndOf="@+id/vwMailL"
+            app:layout_constraintStart_toStartOf="@+id/vwMailL"
+            app:layout_constraintTop_toBottomOf="@+id/tvMailL" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvHintMail1"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_montserrat"
+        android:text="Hint"
+        android:textColor="@color/anotherGray"
+        android:textFontWeight="600"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/etMail1"
+        app:layout_constraintTop_toBottomOf="@+id/etMail1" />
+
+    <View
+        android:id="@+id/vwPasswordL"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        app:layout_constraintEnd_toEndOf="@+id/vwBigForm"
+        app:layout_constraintStart_toStartOf="@+id/vwBigForm"
+        app:layout_constraintTop_toBottomOf="@+id/tvHintMail1" />
+
+    <TextView
+        android:id="@+id/tvPasswordL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_montserrat"
+        android:text="@string/desc_password"
+        android:textColor="@color/darkerGray"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/vwPasswordL"
+        app:layout_constraintTop_toTopOf="@+id/vwPasswordL" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etPassword1"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        app:passwordToggleEnabled="true"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/vwPasswordL"
+        app:layout_constraintEnd_toEndOf="@+id/vwPasswordL"
+        app:layout_constraintStart_toStartOf="@+id/vwPasswordL"
+        app:layout_constraintTop_toBottomOf="@+id/tvPasswordL">
+        <EditText
+            android:id="@+id/etPassword11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_roundrect"
+                android:ems="15"
+                android:fontFamily="@font/font_montserrat"
+                android:hint="@string/hint_writepassword"
+                android:textColor="@color/black"
+                android:inputType="textPassword"
+                android:textColorHint="@color/anotherGray"
+                android:textFontWeight="500"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:paddingVertical="0dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/tvHintPassword1"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_montserrat"
+        android:text="Hint"
+        android:textColor="@color/anotherGray"
+        android:textFontWeight="600"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/etPassword1"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword1" />
+
+    <View
+        android:id="@+id/vwRepPassword"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        app:layout_constraintEnd_toEndOf="@+id/vwBigForm"
+        app:layout_constraintStart_toStartOf="@+id/vwBigForm"
+        app:layout_constraintTop_toBottomOf="@+id/tvHintPassword1" />
+
+    <TextView
+        android:id="@+id/twPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_montserrat"
+        android:text="@string/desc_repeatpassword"
+        android:textColor="@color/darkerGray"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/vwRepPassword"
+        app:layout_constraintTop_toTopOf="@+id/vwRepPassword" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etPasswordR1"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        app:passwordToggleEnabled="true"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/vwRepPassword"
+        app:layout_constraintEnd_toEndOf="@+id/vwRepPassword"
+        app:layout_constraintStart_toStartOf="@+id/vwRepPassword"
+        app:layout_constraintTop_toBottomOf="@+id/twPassword">
+        <EditText
+            android:id="@+id/etPasswordR11"
+            android:layout_width="342dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/ic_roundrect"
+            android:ems="15"
+            android:fontFamily="@font/font_montserrat"
+            android:hint="@string/hint_writepassword"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/anotherGray"
+            android:textFontWeight="500"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:paddingVertical="0dp"
+         />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/tvHintRepPassword1"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_montserrat"
+        android:text="Hint"
+        android:textColor="@color/anotherGray"
+        android:textFontWeight="600"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/etPasswordR1"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordR1" />
+
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/mcAgree"
+        android:layout_width="342dp"
+        android:layout_height="30dp"
+        android:buttonTint="@color/stylishPurple"
+        android:checked="false"
+        android:fontFamily="@font/font_montserrat"
+        android:text="@string/desc_Iagree"
+        android:textColor="@color/grayText"
+        android:textFontWeight="600"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/vwLowForm"
+        app:layout_constraintEnd_toEndOf="@+id/vwLowForm"
+        app:layout_constraintStart_toStartOf="@+id/vwLowForm"
+        app:layout_constraintTop_toBottomOf="@+id/tvHintRepPassword1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbNext"
+        android:layout_width="342dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/stylishPurple"
+        android:fontFamily="@font/font_montserrat"
+        android:text="@string/button_next"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

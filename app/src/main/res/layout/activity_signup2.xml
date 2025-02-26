@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/vwUpper"
+        android:layout_width="342dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/vwBigForm"
+        app:layout_constraintStart_toStartOf="@+id/vwBigForm"
+        app:layout_constraintTop_toTopOf="@+id/vwBigForm" />
+
+    <ImageButton
+        android:id="@+id/ibPrev"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@color/white"
+        android:src="@drawable/ic_arrow"
+        android:contentDescription="Arrow before"
+        app:layout_constraintBottom_toBottomOf="@+id/vwUpper"
+        app:layout_constraintStart_toStartOf="@+id/vwUpper"
+        app:layout_constraintTop_toTopOf="@+id/vwUpper"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="176dp"
+        android:layout_height="26dp"
+        android:fontFamily="@font/font_montserrat"
+        android:text="@string/desc_createaccount"
+        android:textColor="@color/grayText"
+        android:textFontWeight="600"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/vwUpper"
+        app:layout_constraintStart_toStartOf="@+id/vwUpper"
+        app:layout_constraintTop_toTopOf="@+id/vwUpper" />
+
+    <View
+        android:id="@+id/vwBigForm"
+        android:layout_width="342dp"
+        android:layout_height="446dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vwBigForm2"
+        android:layout_width="342dp"
+        android:layout_height="384dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vwBigForm"
+        app:layout_constraintEnd_toEndOf="@+id/vwBigForm" />
+
+    <View
+        android:id="@+id/vwLowForm2"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        app:layout_constraintEnd_toEndOf="@+id/vwBigForm2"
+        app:layout_constraintStart_toStartOf="@+id/vwBigForm2"
+        app:layout_constraintTop_toTopOf="@+id/vwBigForm2" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_montserrat"
+        android:text="@string/desc_lastname"
+        android:textColor="@color/darkerGray"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/vwLowForm2"
+        app:layout_constraintTop_toTopOf="@+id/vwLowForm2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etLastName"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        app:hintEnabled="false"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vwLowForm2"
+        app:layout_constraintEnd_toEndOf="@+id/vwLowForm2"
+        app:layout_constraintStart_toStartOf="@+id/vwLowForm2">
+        <EditText
+            android:id="@+id/etLastName1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_roundrect"
+            android:ems="15"
+            android:fontFamily="@font/font_montserrat"
+            android:textColor="@color/black"
+            android:hint="@string/hint_writelastname"
+            android:inputType="text"
+            android:textColorHint="@color/anotherGray"
+            android:textFontWeight="500"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:paddingVertical="0dp"
+         />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvHintLastName"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_montserrat"
+        android:text=""
+        android:textColor="@color/anotherGray"
+        android:textFontWeight="600"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/etLastName"
+        app:layout_constraintTop_toBottomOf="@+id/etLastName" />
+
+    <View
+        android:id="@+id/vwName"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        app:layout_constraintEnd_toEndOf="@+id/vwLowForm2"
+        app:layout_constraintStart_toStartOf="@+id/vwLowForm2"
+        app:layout_constraintTop_toBottomOf="@+id/tvHintLastName" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_montserrat"
+        android:text="@string/desc_name"
+        android:textColor="@color/darkerGray"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/vwName"
+        app:layout_constraintTop_toTopOf="@+id/vwName" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etName"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        app:hintEnabled="false"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vwName"
+        app:layout_constraintEnd_toEndOf="@+id/vwName"
+        app:layout_constraintStart_toStartOf="@+id/vwName">
+        <EditText
+            android:id="@+id/etName1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_roundrect"
+            android:ems="15"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font_montserrat"
+            android:hint="@string/hint_writename"
+            android:inputType="text"
+            android:textColorHint="@color/anotherGray"
+            android:textFontWeight="500"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:paddingVertical="0dp"
+ />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvHintName"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_montserrat"
+        android:text=""
+        android:textColor="@color/anotherGray"
+        android:textFontWeight="600"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/etName"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <View
+        android:id="@+id/vwSurname"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        app:layout_constraintEnd_toEndOf="@+id/vwName"
+        app:layout_constraintStart_toStartOf="@+id/vwName"
+        app:layout_constraintTop_toBottomOf="@+id/tvHintName" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_montserrat"
+        android:text="@string/desc_surname"
+        android:textColor="@color/darkerGray"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/vwSurname"
+        app:layout_constraintTop_toTopOf="@+id/vwSurname" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etSurname"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        app:hintEnabled="false"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vwSurname"
+        app:layout_constraintEnd_toEndOf="@+id/vwSurname"
+        app:layout_constraintStart_toStartOf="@+id/vwSurname">
+        <EditText
+            android:id="@+id/etSurname1"
+            android:layout_width="342dp"
+            android:layout_height="44dp"
+            android:background="@drawable/ic_roundrect"
+            android:ems="15"
+            android:fontFamily="@font/font_montserrat"
+            android:textColor="@color/black"
+            android:hint="@string/hint_writesurname"
+            android:inputType="text"
+            android:textColorHint="@color/anotherGray"
+            android:textFontWeight="500"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:paddingVertical="0dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvHintSurname"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_montserrat"
+        android:text=""
+        android:textColor="@color/anotherGray"
+        android:textFontWeight="600"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/etSurname"
+        app:layout_constraintTop_toBottomOf="@+id/etSurname" />
+
+    <View
+        android:id="@+id/vwDDMMYYYY"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        app:layout_constraintEnd_toEndOf="@+id/vwSurname"
+        app:layout_constraintStart_toStartOf="@+id/vwSurname"
+        app:layout_constraintTop_toBottomOf="@+id/tvHintSurname" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_montserrat"
+        android:text="@string/desc_birthday"
+        android:textColor="@color/darkerGray"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/vwDDMMYYYY"
+        app:layout_constraintTop_toTopOf="@+id/vwDDMMYYYY" />
+
+    <ImageButton
+        android:id="@+id/ibCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/calendar_days"
+        android:backgroundTint="@color/white"
+        android:contentDescription="ssss"
+        app:layout_constraintBottom_toBottomOf="@id/etDDMMYYYY"
+        app:layout_constraintStart_toStartOf="@+id/etDDMMYYYY"
+        app:layout_constraintTop_toTopOf="@id/etDDMMYYYY" />
+
+    <TextView
+        android:id="@+id/etDDMMYYYY"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        android:background="@drawable/ic_roundrect"
+        android:fontFamily="@font/font_montserrat"
+        android:hint="@string/hint_ddmmyyyy"
+        android:paddingStart="48dp"
+        android:textColorHint="@color/anotherGray"
+        android:textColor="@color/black"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/vwDDMMYYYY"
+        app:layout_constraintEnd_toEndOf="@+id/vwDDMMYYYY"
+        app:layout_constraintStart_toStartOf="@+id/vwDDMMYYYY" />
+
+
+    <View
+        android:id="@+id/vwGender"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/vwDDMMYYYY"
+        app:layout_constraintStart_toStartOf="@+id/vwDDMMYYYY"
+        app:layout_constraintTop_toBottomOf="@+id/vwDDMMYYYY" />
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_montserrat"
+        android:text="@string/desc_gender"
+        android:textColor="@color/darkerGray"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/vwGender"
+        app:layout_constraintTop_toTopOf="@+id/vwGender" />
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/vwGender"
+        app:layout_constraintStart_toStartOf="@+id/vwGender"
+        app:layout_constraintTop_toBottomOf="@+id/tvGender">
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:buttonTint="@color/stylishPurple"
+            android:fontFamily="@font/font_montserrat"
+            android:text="@string/desc_mangender"
+            android:textColor="@color/anotherGray"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:layout_marginTop="4dp"
+            android:checked="true"
+            app:layout_constraintBottom_toBottomOf="@+id/vwGender"
+            app:layout_constraintStart_toStartOf="@+id/vwGender"
+            app:layout_constraintTop_toBottomOf="@+id/tvGender" />
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:buttonTint="@color/stylishPurple"
+            android:fontFamily="@font/font_montserrat"
+            android:text="@string/desc_womangender"
+            android:textColor="@color/anotherGray"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/vwGender"
+            app:layout_constraintStart_toEndOf="@+id/rbMale"
+            app:layout_constraintTop_toBottomOf="@+id/tvGender" />
+        </RadioGroup>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbNext2"
+        android:layout_width="342dp"
+        android:layout_height="52dp"
+        android:backgroundTint="@color/stylishPurple"
+        android:fontFamily="@font/font_montserrat"
+        android:text="@string/button_next"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="8dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name" translatable="false">DriveNextApp</string>
+    <string name="name_drivenext" translatable="false">DriveNext</string>
+    <string name="desc_gettingstarted">Поможем найти твою следующую поездку</string>
+    <string name="button_signin">Войти</string>
+    <string name="button_register">Зарегистрироваться</string>
+    <string name="desc_nointernet">Нет подключения к интернету</string>
+    <string name="desc_checkinternet">Проверьте подключение и повторите попытку</string>
+    <string name="button_tryagain">Повторить попытку</string>
+    <string name="button_skip">Пропустить</string>
+    <string name="desc_carrental">Аренда автомобилей</string>
+    <string name="desc_onboarding1">Открой для себя удобный и доступный способ передвижения</string>
+    <string name="button_next">Далее</string>
+    <string name="button_nextt">Поехали</string>
+    <string name="desc_safeandcomf">Безопасно и удобно</string>
+    <string name="desc_onboarding2">Арендуй автомобиль и наслаждайся его удобством</string>
+    <string name="desc_thebestoffers">Лучшие предложения</string>
+    <string name="desc_onboarding3">Выбирай понравившееся среди сотен доступных автомобилей</string>
+    <string name="desc_signin">Войдите в аккаунт</string>
+    <string name="desc_writedata">Пожалуйста, введите свои данные</string>
+    <string name="desc_email">Электронная почта</string>
+    <string name="desc_password">Пароль</string>
+    <string name="hint_writeemail">Введите электронную почту</string>
+    <string name="hint_writepassword">Введите пароль</string>
+    <string name="button_forgotpassword">Забыли пароль?</string>
+    <string name="button_signingoogle">Войти через Google</string>
+    <string name="desc_createaccount">Создать аккаунт</string>
+    <string name="desc_repeatpassword">Повторите пароль</string>
+    <string name="desc_Iagree">Я согласен с условиями обслуживания и политикой конфиденциальности</string>
+    <string name="desc_lastname">Фамилия</string>
+    <string name="hint_writelastname">Введите фамилию</string>
+    <string name="desc_name">Имя</string>
+    <string name="hint_writename">Введите имя</string>
+    <string name="desc_surname">Отчество</string>
+    <string name="hint_writesurname">Введите отчество</string>
+    <string name="desc_birthday">Дата рождения</string>
+    <string name="hint_ddmmyyyy">DD/MM/YYYY</string>
+    <string name="desc_gender">Пол</string>
+    <string name="desc_mangender">Мужской</string>
+    <string name="desc_womangender">Женский</string>
+    <string name="desc_addingicon">Добавление фотографии поможет владельцам и арендаторам узнать друг друга, когда они будут забирать машину</string>
+    <string name="desc_numberdrivelicense">Номер водительского удостоверения</string>
+    <string name="hint_numberdrivelicense" translatable="false">00000000000000000</string>
+    <string name="desc_dateofget">Дата выдачи</string>
+    <string name="desc_uploaddriverlicense">Загрузите фото водительского удостоверения</string>
+    <string name="desc_uploadphoto">Загрузь фото</string>
+    <string name="desc_uploadpassport">Загрузите фото паспорта</string>
+    <string name="desc_usewithfine">Пользуйтесь с удовольствием</string>
+    <string name="desc_congratulations">Поздравляем</string>
+    <string name="desc_successreg">Вы успешно зарегистрировались. Обработка ваших персональных данных займет около двух часов. Спасибо за ожидание.</string>
+    <string name="fill_fields">Не все поля заполнены</string>
+    <string name="password_missmatch">Пароли должны совпадать</string>
+    <string name="wrong_email">Почта указана неверно</string>
+    <string name="terms_dissagree">Вы не согласились с условием пользовательского соглашения</string>
+    <string name="ommited">*Можно не заполнять</string>
+    <string name="data_pick">Выберите дату</string>
+    <string name="lastname_alpha">Фамилия должна состоять только из букв</string>
+    <string name="name_alpha">Имя должно состоять только из букв</string>
+    <string name="surname_alpha">Отчество должно состоять только из букв</string>
+    <string name="photo_picked">Фото выбрано!</string>
+    <string name="photo_unpicked">Фото не выбрано!</string>
+</resources>

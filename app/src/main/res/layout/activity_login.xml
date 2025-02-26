@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <View
+        android:id="@+id/vwBigL"
+        android:layout_width="342dp"
+        android:layout_height="560dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vwUpperL"
+        android:layout_width="342dp"
+        android:layout_height="64dp"
+        app:layout_constraintEnd_toEndOf="@+id/vwBigL"
+        app:layout_constraintStart_toStartOf="@+id/vwBigL"
+        app:layout_constraintTop_toTopOf="@+id/vwBigL" />
+
+    <TextView
+        android:id="@+id/twUpperL"
+        android:layout_width="342dp"
+        android:layout_height="32dp"
+        android:gravity="center_horizontal"
+        android:text="@string/desc_signin"
+        android:textColor="@color/grayText"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/vwUpperL"
+        app:layout_constraintStart_toStartOf="@+id/vwUpperL"
+        app:layout_constraintTop_toTopOf="@+id/vwBigL" />
+
+    <TextView
+        android:id="@+id/twDescUpperL"
+        android:layout_width="342dp"
+        android:layout_height="24dp"
+        android:gravity="center_horizontal"
+        android:text="@string/desc_writedata"
+        android:textColor="@color/anotherGray"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/vwUpperL"
+        app:layout_constraintEnd_toEndOf="@+id/vwUpperL"
+        app:layout_constraintStart_toStartOf="@+id/vwUpperL" />
+
+    <View
+        android:id="@+id/vwMainL"
+        android:layout_width="342dp"
+        android:layout_height="348dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="@+id/vwBigL"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/vwBigL"
+        app:layout_constraintTop_toBottomOf="@+id/vwUpperL" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbSignInL"
+        android:layout_width="342dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/stylishPurple"
+        android:fontFamily="@font/font_montserrat"
+        android:text="@string/button_signin"
+        android:textColor="@color/white"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/mbSignInGL"
+        app:layout_constraintEnd_toEndOf="@+id/vwMainL"
+        app:layout_constraintStart_toStartOf="@+id/vwMainL" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbSignInGL"
+        android:layout_width="342dp"
+        android:layout_height="52dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/font_montserrat"
+        android:text="@string/button_signingoogle"
+        android:textAllCaps="false"
+        android:textColor="@color/grayText"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vwMainL"
+        app:layout_constraintEnd_toEndOf="@+id/vwMainL"
+        app:layout_constraintStart_toStartOf="@+id/vwMainL"
+        app:strokeColor="#D0D5DD"
+        app:strokeWidth="1dp"
+        app:icon="@drawable/ic_google"
+        app:iconTint="@null"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        />
+
+
+    <View
+        android:id="@+id/vwRegL"
+        android:layout_width="342dp"
+        android:layout_height="210dp"
+        app:layout_constraintEnd_toEndOf="@+id/vwMainL"
+        app:layout_constraintStart_toStartOf="@+id/vwMainL"
+        app:layout_constraintTop_toTopOf="@+id/vwMainL" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbForgotL"
+        android:layout_width="164dp"
+        android:layout_height="25dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/font_montserrat"
+        android:padding="0dp"
+        android:text="@string/button_forgotpassword"
+        android:textColor="@color/stylishPurple"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/vwRegL"
+        app:layout_constraintEnd_toEndOf="@+id/vwRegL"
+        app:layout_constraintStart_toStartOf="@+id/vwRegL" />
+
+    <View
+        android:id="@+id/twRegL"
+        android:layout_width="342dp"
+        android:layout_height="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vwBigL"
+        app:layout_constraintEnd_toEndOf="@+id/vwBigL"
+        app:layout_constraintStart_toStartOf="@+id/vwBigL" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbRegL"
+        android:layout_width="164dp"
+        android:layout_height="25dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center_horizontal"
+        android:text="@string/button_register"
+        android:fontFamily="@font/font_montserrat"
+        android:textStyle="normal"
+        android:textFontWeight="500"
+        android:textColor="@color/stylishPurple"
+        android:textSize="14sp"
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/twRegL"
+        app:layout_constraintEnd_toEndOf="@+id/twRegL"
+        app:layout_constraintStart_toStartOf="@+id/twRegL" />
+
+
+    <View
+        android:id="@+id/vwMailL"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        app:layout_constraintEnd_toEndOf="@+id/vwRegL"
+        app:layout_constraintStart_toStartOf="@+id/vwRegL"
+        app:layout_constraintTop_toTopOf="@+id/vwMainL" />
+
+    <TextView
+        android:id="@+id/tvMailL"
+        android:fontFamily="@font/font_montserrat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/desc_email"
+        android:textColor="@color/darkerGray"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/vwMailL"
+        app:layout_constraintTop_toTopOf="@+id/vwMailL" />
+
+
+    <EditText
+        android:id="@+id/etMailL"
+        android:fontFamily="@font/font_montserrat"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_roundrect"
+        android:ems="15"
+        android:hint="@string/hint_writeemail"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/anotherGray"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/vwMailL"
+        app:layout_constraintEnd_toEndOf="@+id/vwMailL"
+        app:layout_constraintStart_toStartOf="@+id/vwMailL"
+        app:layout_constraintTop_toBottomOf="@+id/tvMailL"
+        />
+
+    <TextView
+        android:id="@+id/tvHintMailL"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:text="Hint"
+        android:textColor="@color/anotherGray"
+        android:fontFamily="@font/font_montserrat"
+        android:textFontWeight="600"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@+id/etMailL"
+        app:layout_constraintStart_toStartOf="@+id/etMailL"
+        android:visibility="invisible"/>
+
+    <View
+        android:id="@+id/vwPasswordL"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        app:layout_constraintEnd_toEndOf="@+id/vwRegL"
+        app:layout_constraintStart_toStartOf="@+id/vwRegL"
+        app:layout_constraintTop_toBottomOf="@+id/tvHintMailL" />
+
+    <TextView
+        android:id="@+id/tvPasswordL"
+        android:fontFamily="@font/font_montserrat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/desc_password"
+        android:textColor="@color/darkerGray"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/vwPasswordL"
+        app:layout_constraintTop_toTopOf="@+id/vwPasswordL"
+        />
+
+
+    <EditText
+        android:id="@+id/etPasswordL"
+        android:fontFamily="@font/font_montserrat"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_roundrect"
+        android:ems="15"
+        android:hint="@string/hint_writepassword"
+        android:inputType="textPassword"
+        android:textColorHint="@color/anotherGray"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/vwPasswordL"
+        app:layout_constraintEnd_toEndOf="@+id/vwPasswordL"
+        app:layout_constraintStart_toStartOf="@+id/vwPasswordL"
+        app:layout_constraintTop_toBottomOf="@+id/tvPasswordL"
+
+        />
+
+    <TextView
+        android:id="@+id/tvHintPasswordL"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:text="Hint"
+        android:textColor="@color/anotherGray"
+        android:fontFamily="@font/font_montserrat"
+        android:textFontWeight="600"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordL"
+        app:layout_constraintStart_toStartOf="@+id/etPasswordL"
+        android:visibility="invisible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

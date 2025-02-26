@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/vwUpper"
+        android:layout_width="342dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUpper"
+        android:layout_width="342dp"
+        android:layout_height="26dp"
+        android:gravity="center_horizontal"
+        android:text="@string/desc_usewithfine"
+        android:textColor="@color/grayText"
+        android:textFontWeight="600"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/vwUpper"
+        app:layout_constraintEnd_toEndOf="@+id/vwUpper"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="@+id/vwUpper"
+        app:layout_constraintTop_toTopOf="@+id/vwUpper" />
+
+    <View
+        android:id="@+id/vwMain"
+        android:layout_width="318dp"
+        android:layout_height="257dp"
+        android:layout_marginTop="149dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vwUpper" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="checked"
+        android:src="@drawable/ic_congrats"
+        app:layout_constraintEnd_toEndOf="@+id/vwMain"
+        app:layout_constraintStart_toStartOf="@+id/vwMain"
+        app:layout_constraintTop_toTopOf="@+id/vwMain"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvCongrats"
+        android:layout_width="176dp"
+        android:layout_height="29dp"
+        android:gravity="center_horizontal"
+        android:text="@string/desc_congratulations"
+        android:textColor="@color/grayText"
+        android:textFontWeight="600"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/tvCongratsDesc"
+        app:layout_constraintStart_toStartOf="@+id/tvCongratsDesc"
+        app:layout_constraintTop_toTopOf="@+id/tvCongratsDesc" />
+
+    <TextView
+        android:layout_width="318dp"
+        android:layout_height="68dp"
+        android:gravity="center_horizontal"
+        android:text="@string/desc_successreg"
+        android:textColor="@color/grayText"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/vwMain"
+        app:layout_constraintEnd_toEndOf="@+id/tvCongratsDesc"
+        app:layout_constraintStart_toStartOf="@+id/tvCongratsDesc" />
+    
+    <View
+        android:id="@+id/tvCongratsDesc"
+        android:layout_width="318dp"
+        android:layout_height="129dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vwMain"
+        app:layout_constraintEnd_toEndOf="@+id/vwMain"
+        app:layout_constraintStart_toStartOf="@+id/vwMain" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbNextC"
+        android:layout_width="342dp"
+        android:layout_height="52dp"
+        android:backgroundTint="@color/stylishPurple"
+        android:fontFamily="@font/font_montserrat"
+        android:text="@string/button_next"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="8dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

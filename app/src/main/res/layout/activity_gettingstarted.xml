@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/tvUpperWind"
+        android:layout_width="342dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="124dp"
+        android:layout_height="29dp"
+        android:text="@string/name_drivenext"
+        android:textColor="@color/stylishPurple"
+        android:textSize="24sp"
+        android:fontFamily="@font/font_montserrat"
+        android:textStyle="normal"
+        android:textFontWeight="600"
+        app:layout_constraintStart_toStartOf="@+id/tvUpperWind"
+        app:layout_constraintTop_toTopOf="@+id/tvUpperWind"
+         />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="342dp"
+        android:layout_height="17dp"
+        android:text="@string/desc_gettingstarted"
+        android:textColor="@color/gentleGrayText"
+        android:textSize="14sp"
+        android:fontFamily="@font/font_montserrat"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/tvUpperWind"
+        app:layout_constraintEnd_toEndOf="@+id/tvUpperWind"
+        app:layout_constraintStart_toStartOf="@+id/tvUpperWind" />
+
+    <ImageView
+        android:id="@+id/ivMainIcon"
+        android:layout_width="343dp"
+        android:layout_height="343dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="Main icon"
+        android:layout_marginTop="59dp"
+        android:src="@drawable/ic_splash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUpperWind"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbSigninGS"
+        android:layout_width="342dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/stylishPurple"
+        android:text="@string/button_signin"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:fontFamily="@font/font_montserrat"
+        android:textStyle="normal"
+        android:textFontWeight="500"
+        app:cornerRadius="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/mbRegGS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbRegGS"
+        android:layout_width="342dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/white"
+        android:text="@string/button_register"
+        android:textAllCaps="false"
+        android:textColor="@color/stylishGrayText"
+        android:textSize="14sp"
+        android:fontFamily="@font/font_montserrat"
+        android:textStyle="normal"
+        android:textFontWeight="500"
+        app:cornerRadius="8dp"
+        app:strokeColor="#D0D5DD"
+        app:strokeWidth="1dp"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

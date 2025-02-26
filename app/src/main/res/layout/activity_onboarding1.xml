@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/vmUpperOb1"
+        android:layout_width="342dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+    />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbSkipOb1"
+        android:layout_width="105dp"
+        android:layout_height="33dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/button_skip"
+        android:textColor="#2A1246"
+        android:textSize="14sp"
+        android:fontFamily="@font/font_montserrat"
+        android:textStyle="normal"
+        android:textFontWeight="600"
+        app:layout_constraintBottom_toBottomOf="@+id/vmUpperOb1"
+        app:layout_constraintEnd_toEndOf="@+id/vmUpperOb1"
+        app:layout_constraintTop_toTopOf="@+id/vmUpperOb1"
+        android:padding="0dp"
+    />
+
+    <ImageView
+        android:id="@+id/ivMainOb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:contentDescription="Car sharing"
+        android:src="@drawable/ic_onboarding1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vmUpperOb1"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:id="@+id/vwLowerOb1"
+        android:layout_width="342dp"
+        android:layout_height="201dp"
+        android:layout_marginBottom="88dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/vwLowHOb1"
+        android:layout_width="300dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintEnd_toEndOf="@+id/vwLowerOb1"
+        app:layout_constraintStart_toStartOf="@+id/vwLowerOb1"
+        app:layout_constraintTop_toTopOf="@+id/vwLowerOb1" />
+
+    <TextView
+        android:id="@+id/tvCarOb1"
+        android:layout_width="277dp"
+        android:layout_height="29dp"
+        android:text="@string/desc_carrental"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:fontFamily="@font/font_montserrat"
+        android:textStyle="normal"
+        android:textFontWeight="600"
+        app:layout_constraintStart_toStartOf="@+id/vwLowHOb1"
+        app:layout_constraintTop_toTopOf="@+id/vwLowHOb1" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="34dp"
+        android:text="@string/desc_onboarding1"
+        android:textSize="14sp"
+        android:textColor="#1A1A1A"
+        android:fontFamily="@font/font_montserrat"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/vwLowHOb1"
+        app:layout_constraintEnd_toEndOf="@+id/vwLowHOb1"
+        app:layout_constraintStart_toStartOf="@+id/vwLowHOb1" />
+
+    <View
+        android:id="@+id/vwLowerLOb1"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vwLowerOb1"
+        app:layout_constraintEnd_toEndOf="@+id/vwLowerOb1"
+        app:layout_constraintStart_toStartOf="@+id/vwLowerOb1" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbNextOb"
+        android:layout_width="131dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#2A1246"
+        android:text="@string/button_next"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:cornerRadius="14dp"
+        android:fontFamily="@font/font_montserrat"
+        android:textStyle="normal"
+        android:textFontWeight="500"
+        app:layout_constraintBottom_toBottomOf="@+id/vwLowerOb1"
+        app:layout_constraintEnd_toEndOf="@+id/vwLowerLOb1"
+        app:layout_constraintTop_toTopOf="@+id/vwLowerLOb1" />
+
+    <ImageView
+        android:id="@+id/ivPurplOb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="violet button"
+        android:src="@drawable/ic_purple_line"
+        app:layout_constraintBottom_toBottomOf="@+id/vwLowerOb1"
+        app:layout_constraintStart_toStartOf="@+id/vwLowerLOb1"
+        app:layout_constraintTop_toTopOf="@+id/vwLowerLOb1"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/ivGray1Ob1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="gray button1"
+        android:src="@drawable/ic_gray_line"
+        app:layout_constraintBottom_toBottomOf="@+id/vwLowerOb1"
+        app:layout_constraintStart_toEndOf="@+id/ivPurplOb1"
+        app:layout_constraintTop_toTopOf="@+id/vwLowerLOb1"
+        android:layout_marginStart="8dp"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/ivGray2Ob2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:contentDescription="gray button2"
+        android:src="@drawable/ic_gray_line"
+        app:layout_constraintBottom_toBottomOf="@+id/vwLowerOb1"
+        app:layout_constraintStart_toEndOf="@+id/ivGray1Ob1"
+        app:layout_constraintTop_toTopOf="@+id/vwLowerLOb1"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
