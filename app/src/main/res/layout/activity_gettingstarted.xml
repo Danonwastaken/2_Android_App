@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical">
 
 
@@ -21,24 +22,23 @@
     <TextView
         android:layout_width="124dp"
         android:layout_height="29dp"
+        android:fontFamily="@font/font_montserrat"
         android:text="@string/name_drivenext"
         android:textColor="@color/stylishPurple"
-        android:textSize="24sp"
-        android:fontFamily="@font/font_montserrat"
-        android:textStyle="normal"
         android:textFontWeight="600"
+        android:textSize="24sp"
+        android:textStyle="normal"
         app:layout_constraintStart_toStartOf="@+id/tvUpperWind"
-        app:layout_constraintTop_toTopOf="@+id/tvUpperWind"
-         />
+        app:layout_constraintTop_toTopOf="@+id/tvUpperWind" />
 
     <TextView
         android:id="@+id/tvDesc"
         android:layout_width="342dp"
         android:layout_height="17dp"
+        android:fontFamily="@font/font_montserrat"
         android:text="@string/desc_gettingstarted"
         android:textColor="@color/gentleGrayText"
         android:textSize="14sp"
-        android:fontFamily="@font/font_montserrat"
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="@+id/tvUpperWind"
         app:layout_constraintEnd_toEndOf="@+id/tvUpperWind"
@@ -49,8 +49,8 @@
         android:layout_width="343dp"
         android:layout_height="343dp"
         android:layout_gravity="center_horizontal"
-        android:contentDescription="Main icon"
         android:layout_marginTop="59dp"
+        android:contentDescription="Main icon"
         android:src="@drawable/ic_splash"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,16 +62,16 @@
         android:layout_width="342dp"
         android:layout_height="52dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@color/stylishPurple"
+        android:fontFamily="@font/font_montserrat"
         android:text="@string/button_signin"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="14sp"
-        android:fontFamily="@font/font_montserrat"
-        android:textStyle="normal"
         android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
         app:cornerRadius="8dp"
-        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/mbRegGS"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -81,24 +81,24 @@
         android:layout_width="342dp"
         android:layout_height="52dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="72dp"
         android:backgroundTint="@color/white"
+        android:fontFamily="@font/font_montserrat"
         android:text="@string/button_register"
         android:textAllCaps="false"
         android:textColor="@color/stylishGrayText"
-        android:textSize="14sp"
-        android:fontFamily="@font/font_montserrat"
-        android:textStyle="normal"
         android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
         app:cornerRadius="8dp"
-        app:strokeColor="#D0D5DD"
-        app:strokeWidth="1dp"
-        android:layout_marginBottom="72dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#D0D5DD"
+        app:strokeWidth="1dp" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

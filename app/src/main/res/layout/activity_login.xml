@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:background="@color/white"
+    android:orientation="vertical">
 
     <View
         android:id="@+id/vwBigL"
@@ -89,16 +89,15 @@
         android:textSize="14sp"
         android:textStyle="normal"
         app:cornerRadius="8dp"
+        app:icon="@drawable/ic_google"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        app:iconTint="@null"
         app:layout_constraintBottom_toBottomOf="@+id/vwMainL"
         app:layout_constraintEnd_toEndOf="@+id/vwMainL"
         app:layout_constraintStart_toStartOf="@+id/vwMainL"
         app:strokeColor="#D0D5DD"
-        app:strokeWidth="1dp"
-        app:icon="@drawable/ic_google"
-        app:iconTint="@null"
-        app:iconGravity="textStart"
-        app:iconPadding="12dp"
-        />
+        app:strokeWidth="1dp" />
 
 
     <View
@@ -138,14 +137,14 @@
         android:layout_width="164dp"
         android:layout_height="25dp"
         android:backgroundTint="@color/white"
-        android:gravity="center_horizontal"
-        android:text="@string/button_register"
         android:fontFamily="@font/font_montserrat"
-        android:textStyle="normal"
-        android:textFontWeight="500"
-        android:textColor="@color/stylishPurple"
-        android:textSize="14sp"
+        android:gravity="center_horizontal"
         android:padding="0dp"
+        android:text="@string/button_register"
+        android:textColor="@color/stylishPurple"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="@+id/twRegL"
         app:layout_constraintEnd_toEndOf="@+id/twRegL"
         app:layout_constraintStart_toStartOf="@+id/twRegL" />
@@ -161,9 +160,9 @@
 
     <TextView
         android:id="@+id/tvMailL"
-        android:fontFamily="@font/font_montserrat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/font_montserrat"
         android:text="@string/desc_email"
         android:textColor="@color/darkerGray"
         android:textFontWeight="500"
@@ -175,12 +174,12 @@
 
     <EditText
         android:id="@+id/etMailL"
-        android:fontFamily="@font/font_montserrat"
         android:layout_width="342dp"
         android:layout_height="44dp"
         android:layout_marginTop="4dp"
         android:background="@drawable/ic_roundrect"
         android:ems="15"
+        android:fontFamily="@font/font_montserrat"
         android:hint="@string/hint_writeemail"
         android:inputType="textEmailAddress"
         android:textColorHint="@color/anotherGray"
@@ -190,22 +189,21 @@
         app:layout_constraintBottom_toBottomOf="@+id/vwMailL"
         app:layout_constraintEnd_toEndOf="@+id/vwMailL"
         app:layout_constraintStart_toStartOf="@+id/vwMailL"
-        app:layout_constraintTop_toBottomOf="@+id/tvMailL"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/tvMailL" />
 
     <TextView
         android:id="@+id/tvHintMailL"
         android:layout_width="342dp"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/font_montserrat"
         android:text="Hint"
         android:textColor="@color/anotherGray"
-        android:fontFamily="@font/font_montserrat"
         android:textFontWeight="600"
         android:textSize="14sp"
         android:textStyle="normal"
-        app:layout_constraintTop_toBottomOf="@+id/etMailL"
+        android:visibility="invisible"
         app:layout_constraintStart_toStartOf="@+id/etMailL"
-        android:visibility="invisible"/>
+        app:layout_constraintTop_toBottomOf="@+id/etMailL" />
 
     <View
         android:id="@+id/vwPasswordL"
@@ -217,27 +215,26 @@
 
     <TextView
         android:id="@+id/tvPasswordL"
-        android:fontFamily="@font/font_montserrat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/font_montserrat"
         android:text="@string/desc_password"
         android:textColor="@color/darkerGray"
         android:textFontWeight="500"
         android:textSize="14sp"
         android:textStyle="normal"
         app:layout_constraintStart_toStartOf="@+id/vwPasswordL"
-        app:layout_constraintTop_toTopOf="@+id/vwPasswordL"
-        />
+        app:layout_constraintTop_toTopOf="@+id/vwPasswordL" />
 
 
     <EditText
         android:id="@+id/etPasswordL"
-        android:fontFamily="@font/font_montserrat"
         android:layout_width="342dp"
         android:layout_height="44dp"
         android:layout_marginTop="4dp"
         android:background="@drawable/ic_roundrect"
         android:ems="15"
+        android:fontFamily="@font/font_montserrat"
         android:hint="@string/hint_writepassword"
         android:inputType="textPassword"
         android:textColorHint="@color/anotherGray"
@@ -255,14 +252,14 @@
         android:id="@+id/tvHintPasswordL"
         android:layout_width="342dp"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/font_montserrat"
         android:text="Hint"
         android:textColor="@color/anotherGray"
-        android:fontFamily="@font/font_montserrat"
         android:textFontWeight="600"
         android:textSize="14sp"
         android:textStyle="normal"
-        app:layout_constraintTop_toBottomOf="@+id/etPasswordL"
+        android:visibility="invisible"
         app:layout_constraintStart_toStartOf="@+id/etPasswordL"
-        android:visibility="invisible"/>
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordL" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

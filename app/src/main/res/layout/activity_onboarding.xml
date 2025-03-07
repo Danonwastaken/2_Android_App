@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:orientation="vertical">
 
     <View
         android:id="@+id/vmUpperOb"
@@ -21,17 +21,16 @@
         android:layout_width="105dp"
         android:layout_height="33dp"
         android:backgroundTint="@color/white"
+        android:fontFamily="@font/font_montserrat"
+        android:padding="0dp"
         android:text="@string/button_skip"
         android:textColor="@color/stylishPurple"
-        android:textSize="14sp"
-        android:fontFamily="@font/font_montserrat"
-        android:textStyle="normal"
         android:textFontWeight="600"
+        android:textSize="14sp"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="@+id/vmUpperOb"
         app:layout_constraintEnd_toEndOf="@+id/vmUpperOb"
-        app:layout_constraintTop_toTopOf="@+id/vmUpperOb"
-        android:padding="0dp"
-        />
+        app:layout_constraintTop_toTopOf="@+id/vmUpperOb" />
 
     <ImageView
         android:id="@+id/ivMainOb"
@@ -69,12 +68,12 @@
         android:id="@+id/tvCarOb"
         android:layout_width="277dp"
         android:layout_height="29dp"
+        android:fontFamily="@font/font_montserrat"
         android:text="@string/desc_carrental"
         android:textColor="@color/black"
-        android:textSize="24sp"
-        android:fontFamily="@font/font_montserrat"
-        android:textStyle="normal"
         android:textFontWeight="600"
+        android:textSize="24sp"
+        android:textStyle="normal"
         app:layout_constraintStart_toStartOf="@+id/vwLowHOb"
         app:layout_constraintTop_toTopOf="@+id/vwLowHOb" />
 
@@ -82,10 +81,10 @@
         android:id="@+id/tvCarDescOb"
         android:layout_width="300dp"
         android:layout_height="34dp"
-        android:text="@string/desc_onboarding1"
-        android:textSize="14sp"
-        android:textColor="@color/grayText"
         android:fontFamily="@font/font_montserrat"
+        android:text="@string/desc_onboarding1"
+        android:textColor="@color/grayText"
+        android:textSize="14sp"
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="@+id/vwLowHOb"
         app:layout_constraintEnd_toEndOf="@+id/vwLowHOb"
@@ -105,13 +104,13 @@
         android:layout_width="131dp"
         android:layout_height="50dp"
         android:backgroundTint="@color/stylishPurple"
+        android:fontFamily="@font/font_montserrat"
         android:text="@string/button_next"
         android:textColor="@color/white"
-        android:textSize="14sp"
-        app:cornerRadius="14dp"
-        android:fontFamily="@font/font_montserrat"
-        android:textStyle="normal"
         android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="14dp"
         app:layout_constraintBottom_toBottomOf="@+id/vwLowerOb"
         app:layout_constraintEnd_toEndOf="@+id/vwLowerLOb"
         app:layout_constraintTop_toTopOf="@+id/vwLowerLOb" />
@@ -131,12 +130,12 @@
         android:id="@+id/ivSecondSwapOb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:contentDescription="gray button1"
         android:src="@drawable/ic_gray_line"
         app:layout_constraintBottom_toBottomOf="@+id/vwLowerOb"
         app:layout_constraintStart_toEndOf="@+id/ivFirstSwapOb"
         app:layout_constraintTop_toTopOf="@+id/vwLowerLOb"
-        android:layout_marginStart="8dp"
         tools:ignore="HardcodedText" />
 
     <ImageView

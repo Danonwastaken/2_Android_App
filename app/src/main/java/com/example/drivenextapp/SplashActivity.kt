@@ -56,11 +56,11 @@ class SplashActivity : AppCompatActivity() {
 
         button = binding.mbTryagainM
         button.setOnClickListener {
-            button.isEnabled = false // Делаем кнопку неактивной при нажатии
+            button.isEnabled = false
             checkInternet()
         }
 
-        // Сразу проверяем интернет при запуске активности
+        //
         checkInternet()
     }
 
@@ -70,19 +70,19 @@ class SplashActivity : AppCompatActivity() {
         if (NetworkUtil.isNetworkAvailable(this@SplashActivity)) {
             CoroutineScope(Dispatchers.Main).launch {
                 if (NetworkUtil.isInternetAvailable()) {
-                    // Если интернет есть, скрываем сообщение и переходим на MainActivity через 3 секунды
+
                     checkInter.visibility = INVISIBLE
                     Handler(Looper.getMainLooper()).postDelayed({
                         startMainActivity()
                     }, 3000)
                 } else {
-                    // Если интернета нет, показываем сообщение и активируем кнопку
+
                     checkInter.visibility = VISIBLE
                     button.isEnabled = true
                 }
             }
         } else {
-            // Если сеть недоступна, показываем сообщение и активируем кнопку
+
             checkInter.visibility = VISIBLE
             button.isEnabled = true
         }

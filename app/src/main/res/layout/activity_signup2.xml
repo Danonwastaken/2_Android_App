@@ -19,8 +19,8 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:background="@color/white"
-        android:src="@drawable/ic_arrow"
         android:contentDescription="Arrow before"
+        android:src="@drawable/ic_arrow"
         app:layout_constraintBottom_toBottomOf="@+id/vwUpper"
         app:layout_constraintStart_toStartOf="@+id/vwUpper"
         app:layout_constraintTop_toTopOf="@+id/vwUpper"
@@ -30,12 +30,12 @@
         android:layout_width="176dp"
         android:layout_height="26dp"
         android:fontFamily="@font/font_montserrat"
+        android:gravity="center_horizontal"
         android:text="@string/desc_createaccount"
         android:textColor="@color/grayText"
         android:textFontWeight="600"
         android:textSize="20sp"
         android:textStyle="normal"
-        android:gravity="center_horizontal"
         app:layout_constraintEnd_toEndOf="@+id/vwUpper"
         app:layout_constraintStart_toStartOf="@+id/vwUpper"
         app:layout_constraintTop_toTopOf="@+id/vwUpper" />
@@ -81,11 +81,12 @@
         android:id="@+id/etLastName"
         android:layout_width="342dp"
         android:layout_height="44dp"
-        app:hintEnabled="false"
         android:layout_marginTop="4dp"
+        app:hintEnabled="false"
         app:layout_constraintBottom_toBottomOf="@+id/vwLowForm2"
         app:layout_constraintEnd_toEndOf="@+id/vwLowForm2"
         app:layout_constraintStart_toStartOf="@+id/vwLowForm2">
+
         <EditText
             android:id="@+id/etLastName1"
             android:layout_width="match_parent"
@@ -93,15 +94,14 @@
             android:background="@drawable/ic_roundrect"
             android:ems="15"
             android:fontFamily="@font/font_montserrat"
-            android:textColor="@color/black"
             android:hint="@string/hint_writelastname"
             android:inputType="text"
+            android:paddingVertical="0dp"
+            android:textColor="@color/black"
             android:textColorHint="@color/anotherGray"
             android:textFontWeight="500"
             android:textSize="14sp"
-            android:textStyle="normal"
-            android:paddingVertical="0dp"
-         />
+            android:textStyle="normal" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -143,27 +143,27 @@
         android:id="@+id/etName"
         android:layout_width="342dp"
         android:layout_height="44dp"
-        app:hintEnabled="false"
         android:layout_marginTop="4dp"
+        app:hintEnabled="false"
         app:layout_constraintBottom_toBottomOf="@+id/vwName"
         app:layout_constraintEnd_toEndOf="@+id/vwName"
         app:layout_constraintStart_toStartOf="@+id/vwName">
+
         <EditText
             android:id="@+id/etName1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/ic_roundrect"
             android:ems="15"
-            android:textColor="@color/black"
             android:fontFamily="@font/font_montserrat"
             android:hint="@string/hint_writename"
             android:inputType="text"
+            android:paddingVertical="0dp"
+            android:textColor="@color/black"
             android:textColorHint="@color/anotherGray"
             android:textFontWeight="500"
             android:textSize="14sp"
-            android:textStyle="normal"
-            android:paddingVertical="0dp"
- />
+            android:textStyle="normal" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -205,11 +205,12 @@
         android:id="@+id/etSurname"
         android:layout_width="342dp"
         android:layout_height="44dp"
-        app:hintEnabled="false"
         android:layout_marginTop="4dp"
+        app:hintEnabled="false"
         app:layout_constraintBottom_toBottomOf="@+id/vwSurname"
         app:layout_constraintEnd_toEndOf="@+id/vwSurname"
         app:layout_constraintStart_toStartOf="@+id/vwSurname">
+
         <EditText
             android:id="@+id/etSurname1"
             android:layout_width="342dp"
@@ -217,14 +218,14 @@
             android:background="@drawable/ic_roundrect"
             android:ems="15"
             android:fontFamily="@font/font_montserrat"
-            android:textColor="@color/black"
             android:hint="@string/hint_writesurname"
             android:inputType="text"
+            android:paddingVertical="0dp"
+            android:textColor="@color/black"
             android:textColorHint="@color/anotherGray"
             android:textFontWeight="500"
             android:textSize="14sp"
-            android:textStyle="normal"
-            android:paddingVertical="0dp" />
+            android:textStyle="normal" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -266,12 +267,12 @@
         android:id="@+id/ibCalendar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/calendar_days"
         android:backgroundTint="@color/white"
         android:contentDescription="ssss"
         app:layout_constraintBottom_toBottomOf="@id/etDDMMYYYY"
         app:layout_constraintStart_toStartOf="@+id/etDDMMYYYY"
-        app:layout_constraintTop_toTopOf="@id/etDDMMYYYY" />
+        app:layout_constraintTop_toTopOf="@id/etDDMMYYYY"
+        app:srcCompat="@drawable/calendar_days" />
 
     <TextView
         android:id="@+id/etDDMMYYYY"
@@ -279,14 +280,14 @@
         android:layout_height="44dp"
         android:background="@drawable/ic_roundrect"
         android:fontFamily="@font/font_montserrat"
+        android:gravity="center_vertical"
         android:hint="@string/hint_ddmmyyyy"
         android:paddingStart="48dp"
-        android:textColorHint="@color/anotherGray"
         android:textColor="@color/black"
+        android:textColorHint="@color/anotherGray"
         android:textFontWeight="500"
         android:textSize="14sp"
         android:textStyle="normal"
-        android:gravity="center_vertical"
         app:layout_constraintBottom_toBottomOf="@+id/vwDDMMYYYY"
         app:layout_constraintEnd_toEndOf="@+id/vwDDMMYYYY"
         app:layout_constraintStart_toStartOf="@+id/vwDDMMYYYY" />
@@ -313,6 +314,7 @@
         android:textStyle="normal"
         app:layout_constraintStart_toStartOf="@+id/vwGender"
         app:layout_constraintTop_toTopOf="@+id/vwGender" />
+
     <RadioGroup
         android:id="@+id/rgGender"
         android:layout_width="wrap_content"
@@ -321,18 +323,19 @@
         app:layout_constraintBottom_toBottomOf="@+id/vwGender"
         app:layout_constraintStart_toStartOf="@+id/vwGender"
         app:layout_constraintTop_toBottomOf="@+id/tvGender">
+
         <RadioButton
             android:id="@+id/rbMale"
             android:layout_width="wrap_content"
             android:layout_height="24dp"
+            android:layout_marginTop="4dp"
             android:buttonTint="@color/stylishPurple"
+            android:checked="true"
             android:fontFamily="@font/font_montserrat"
             android:text="@string/desc_mangender"
             android:textColor="@color/anotherGray"
             android:textSize="14sp"
             android:textStyle="normal"
-            android:layout_marginTop="4dp"
-            android:checked="true"
             app:layout_constraintBottom_toBottomOf="@+id/vwGender"
             app:layout_constraintStart_toStartOf="@+id/vwGender"
             app:layout_constraintTop_toBottomOf="@+id/tvGender" />
@@ -341,22 +344,24 @@
             android:id="@+id/rbFemale"
             android:layout_width="wrap_content"
             android:layout_height="24dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="4dp"
             android:buttonTint="@color/stylishPurple"
             android:fontFamily="@font/font_montserrat"
             android:text="@string/desc_womangender"
             android:textColor="@color/anotherGray"
             android:textSize="14sp"
             android:textStyle="normal"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="4dp"
             app:layout_constraintBottom_toBottomOf="@+id/vwGender"
             app:layout_constraintStart_toEndOf="@+id/rbMale"
             app:layout_constraintTop_toBottomOf="@+id/tvGender" />
-        </RadioGroup>
+    </RadioGroup>
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/mbNext2"
         android:layout_width="342dp"
         android:layout_height="52dp"
+        android:layout_marginBottom="32dp"
         android:backgroundTint="@color/stylishPurple"
         android:fontFamily="@font/font_montserrat"
         android:text="@string/button_next"
@@ -364,7 +369,6 @@
         android:textSize="14sp"
         android:textStyle="normal"
         app:cornerRadius="8dp"
-        android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

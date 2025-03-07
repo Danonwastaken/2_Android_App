@@ -75,7 +75,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/vwMain"
         app:layout_constraintEnd_toEndOf="@+id/tvCongratsDesc"
         app:layout_constraintStart_toStartOf="@+id/tvCongratsDesc" />
-    
+
     <View
         android:id="@+id/tvCongratsDesc"
         android:layout_width="318dp"
@@ -88,6 +88,7 @@
         android:id="@+id/mbNextC"
         android:layout_width="342dp"
         android:layout_height="52dp"
+        android:layout_marginBottom="32dp"
         android:backgroundTint="@color/stylishPurple"
         android:fontFamily="@font/font_montserrat"
         android:text="@string/button_next"
@@ -95,7 +96,6 @@
         android:textSize="14sp"
         android:textStyle="normal"
         app:cornerRadius="8dp"
-        android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

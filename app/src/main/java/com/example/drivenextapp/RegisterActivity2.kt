@@ -68,7 +68,6 @@ class RegisterActivity2 : AppCompatActivity() {
         button.setOnClickListener {
             val selectedOption : Int = radioGroup.checkedRadioButtonId
             val radioButton = findViewById<RadioButton>(selectedOption)
-            Toast.makeText(this, radioButton.text, Toast.LENGTH_LONG).show()
             val lastName = userLastName.text.toString().trim()
             val namee = userName.text.toString().trim()
             val surname = userSurname.text.toString().trim()
@@ -97,7 +96,7 @@ class RegisterActivity2 : AppCompatActivity() {
                         nameHint.visibility = INVISIBLE
                     }
                 }
-                !surname.isAlpha() -> {
+                !TextUtils.isEmpty(surname) && !surname.isAlpha() -> {
                     surnameHint.visibility = VISIBLE
                     surnameHint.text = getString(R.string.surname_alpha)
                     CoroutineScope(Dispatchers.Main).launch {
@@ -105,7 +104,7 @@ class RegisterActivity2 : AppCompatActivity() {
                         surnameHint.visibility = INVISIBLE
                     }
                 }
-                TextUtils.isEmpty(lastName) || TextUtils.isEmpty(namee) -> {
+                TextUtils.isEmpty(lastName) || TextUtils.isEmpty(namee) || TextUtils.isEmpty(surname) -> {
                     Toast.makeText(this, getString(R.string.fill_fields), Toast.LENGTH_LONG).show()
                 }
             }

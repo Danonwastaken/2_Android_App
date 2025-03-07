@@ -85,12 +85,13 @@
         android:id="@+id/etMail1"
         android:layout_width="342dp"
         android:layout_height="44dp"
-        app:hintEnabled="false"
         android:layout_marginTop="4dp"
+        app:hintEnabled="false"
         app:layout_constraintBottom_toBottomOf="@+id/vwMailL"
         app:layout_constraintEnd_toEndOf="@+id/vwMailL"
         app:layout_constraintStart_toStartOf="@+id/vwMailL"
         app:layout_constraintTop_toBottomOf="@+id/tvMailL">
+
         <EditText
             android:id="@+id/etMail11"
             android:layout_width="match_parent"
@@ -100,12 +101,12 @@
             android:fontFamily="@font/font_montserrat"
             android:hint="@string/hint_writeemail"
             android:inputType="textEmailAddress"
+            android:paddingVertical="0dp"
             android:textColor="@color/black"
             android:textColorHint="@color/anotherGray"
             android:textFontWeight="500"
             android:textSize="14sp"
             android:textStyle="normal"
-            android:paddingVertical="0dp"
             app:layout_constraintBottom_toBottomOf="@+id/vwMailL"
             app:layout_constraintEnd_toEndOf="@+id/vwMailL"
             app:layout_constraintStart_toStartOf="@+id/vwMailL"
@@ -152,29 +153,32 @@
         android:layout_width="342dp"
         android:layout_height="44dp"
         android:layout_marginTop="4dp"
-        app:passwordToggleEnabled="true"
+        android:theme="@style/Theme.Design.Light"
         app:hintEnabled="false"
         app:layout_constraintBottom_toBottomOf="@+id/vwPasswordL"
         app:layout_constraintEnd_toEndOf="@+id/vwPasswordL"
         app:layout_constraintStart_toStartOf="@+id/vwPasswordL"
-        app:layout_constraintTop_toBottomOf="@+id/tvPasswordL">
+        app:layout_constraintTop_toBottomOf="@+id/tvPasswordL"
+        app:passwordToggleEnabled="true"
+        >
+
         <EditText
             android:id="@+id/etPassword11"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/ic_roundrect"
-                android:ems="15"
-                android:fontFamily="@font/font_montserrat"
-                android:hint="@string/hint_writepassword"
-                android:textColor="@color/black"
-                android:inputType="textPassword"
-                android:textColorHint="@color/anotherGray"
-                android:textFontWeight="500"
-                android:textSize="14sp"
-                android:textStyle="normal"
-                android:paddingVertical="0dp"
-            />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_roundrect"
+            android:ems="15"
+            android:fontFamily="@font/font_montserrat"
+            android:hint="@string/hint_writepassword"
+            android:inputType="textPassword"
+            android:paddingVertical="0dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/anotherGray"
+            android:textFontWeight="500"
+            android:textSize="14sp"
+            android:textStyle="normal" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <TextView
         android:id="@+id/tvHintPassword1"
         android:layout_width="342dp"
@@ -215,12 +219,14 @@
         android:layout_width="342dp"
         android:layout_height="44dp"
         android:layout_marginTop="4dp"
-        app:passwordToggleEnabled="true"
+        android:theme="@style/Theme.Design.Light"
         app:hintEnabled="false"
         app:layout_constraintBottom_toBottomOf="@+id/vwRepPassword"
         app:layout_constraintEnd_toEndOf="@+id/vwRepPassword"
         app:layout_constraintStart_toStartOf="@+id/vwRepPassword"
-        app:layout_constraintTop_toBottomOf="@+id/twPassword">
+        app:layout_constraintTop_toBottomOf="@+id/twPassword"
+        app:passwordToggleEnabled="true">
+
         <EditText
             android:id="@+id/etPasswordR11"
             android:layout_width="342dp"
@@ -231,13 +237,12 @@
             android:fontFamily="@font/font_montserrat"
             android:hint="@string/hint_writepassword"
             android:inputType="textPassword"
+            android:paddingVertical="0dp"
             android:textColor="@color/black"
             android:textColorHint="@color/anotherGray"
             android:textFontWeight="500"
             android:textSize="14sp"
-            android:textStyle="normal"
-            android:paddingVertical="0dp"
-         />
+            android:textStyle="normal" />
     </com.google.android.material.textfield.TextInputLayout>
 
 

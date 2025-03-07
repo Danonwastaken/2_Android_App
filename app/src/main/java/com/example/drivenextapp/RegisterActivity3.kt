@@ -7,6 +7,7 @@ import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
 import android.text.TextUtils
+import android.view.View.INVISIBLE
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -48,7 +49,6 @@ class RegisterActivity3 : AppCompatActivity() {
                 // Ресайзим Bitmap
                 val compressedBitmap = Bitmap.createScaledBitmap(originalBitmap, 256, 256, true)
 
-                // Устанавливаем ресайзнутое изображение в ImageView
                 binding.ivAvatar.setImageBitmap(compressedBitmap)
             }
         }
@@ -97,6 +97,7 @@ class RegisterActivity3 : AppCompatActivity() {
 
         ibAvatar.setOnClickListener {
             openGallery(pickAvatarLauncher)
+            ibAvatar.visibility = INVISIBLE
         }
 
         ibPassport.setOnClickListener {
