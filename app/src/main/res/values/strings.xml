@@ -59,4 +59,43 @@
     <string name="surname_alpha">Отчество должно состоять только из букв</string>
     <string name="photo_picked">Фото выбрано!</string>
     <string name="photo_unpicked">Фото не выбрано!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="car_fuel" translatable="false">Бензин</string>
+    <string name="car_at" translatable="false">A/T</string>
+    <string name="car_dct" translatable="false">DC/T</string>
+    <string name="car_sst" translatable="false">SS/T</string>
+    <string name="car_2500" translatable="false">2500Р в день</string>
+    <string name="car_2000" translatable="false">2000Р в день</string>
+    <string name="car_3500" translatable="false">3500Р в день</string>
+    <string name="car_3000" translatable="false">3000Р в день</string>
+    <string name="car_sedan" translatable="false">S 500 Sedan</string>
+    <string name="car_quattro" translatable="false">TT Quattro</string>
+    <string name="car_huracan" translatable="false">Huracan</string>
+    <string name="car_roadster" translatable="false">Roadster</string>
+    <string name="car_mercedes" translatable="false">Mercedes-Benz</string>
+    <string name="car_audi" translatable="false">Audi</string>
+    <string name="car_lamborghini" translatable="false">Lamborghini</string>
+    <string name="car_tesla" translatable="false">Tesla</string>
+    <string name="login_usernotfound" translatable="false">Пользователь не найден</string>
+    <string name="loader_rent" translatable="false">Забронировать</string>
+    <string name="loader_details" translatable="false">Детали</string>
+    <string name="profile" translatable="false">Профиль</string>
+    <string name="profile_join" translatable="false">Присоединился в июле 2024</string>
+    <string name="desc_google" translatable="false">Google</string>
+    <string name="desc_logout" translatable="false">Выйти из профиля</string>
+    <string name="desc_None" translatable="false">None</string>
+    <string name="desc_changePassword" translatable="false">Поменять пароль</string>
+    <string name="desc_nothing" translatable="false">Тут ничего нет</string>
+    <string name="desc_sverch" translatable="false">*Треск сверчков*</string>
+    <string name="desc_autoFind" translatable="false">Введите марку автомобиля</string>
+    <string name="desc_findAuto" translatable="false">Давайте найдём автомобиль</string>
+    <string name="desc_settings" translatable="false">Настройки</string>
+    <string name="desc_myRent" translatable="false">Мои бронирования</string>
+    <string name="desc_theme" translatable="false">Тема</string>
+    <string name="desc_notifications" translatable="false">Уведомления</string>
+    <string name="desc_joinCar" translatable="false">Подключить свой автомобиль</string>
+    <string name="desc_helpp" translatable="false">Помощь</string>
+    <string name="desc_inviteFriend" translatable="false">Пригласи друга</string>
+    <string name="car_fuelElectro" translatable="false">Электро</string>
 </resources>

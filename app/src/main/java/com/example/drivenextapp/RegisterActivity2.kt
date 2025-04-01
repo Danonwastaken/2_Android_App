@@ -40,7 +40,8 @@ class RegisterActivity2 : AppCompatActivity() {
         val buttonPrev = binding.ibPrev
         val calendar = binding.ibCalendar
         val radioGroup = binding.rgGender
-        val intent = Intent(this, RegisterActivity3::class.java)
+
+
         surnameHint.text = getString(R.string.ommited)
 
         fun String.isAlpha(): Boolean {
@@ -68,11 +69,28 @@ class RegisterActivity2 : AppCompatActivity() {
         button.setOnClickListener {
             val selectedOption : Int = radioGroup.checkedRadioButtonId
             val radioButton = findViewById<RadioButton>(selectedOption)
+            val gender = when (selectedOption) {
+                binding.rbMale.id -> "Мужской"   // Предполагается, что у вас есть radiobutton с id rbMale
+                binding.rbFemale.id -> "Женский" // Предполагается, что у вас есть radiobutton с id rbFemale
+                else -> ""
+            }
             val lastName = userLastName.text.toString().trim()
             val namee = userName.text.toString().trim()
             val surname = userSurname.text.toString().trim()
             val bDate = userBdate.text.toString()
+            val mail = intent.getStringExtra("email")
+            val pass = intent.getStringExtra("password")
 
+
+            val intent = Intent(this, RegisterActivity3::class.java).apply {
+                putExtra("lastname", lastName)
+                putExtra("name", namee)
+                putExtra("surname", surname)
+                putExtra("email", mail)
+                putExtra("password", pass)
+                putExtra("gender", gender)
+
+            }
             when {
                 (lastName.isAlpha() && namee.isAlpha() && !TextUtils.isEmpty(lastName) && !TextUtils.isEmpty(namee) && !TextUtils.isEmpty(bDate))
                         || (lastName.isAlpha() && namee.isAlpha() && surname.isAlpha() && !TextUtils.isEmpty(lastName) && !TextUtils.isEmpty(namee)

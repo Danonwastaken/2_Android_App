@@ -36,7 +36,9 @@ class RegisterActivity: AppCompatActivity() {
         val mailHint = binding.tvHintMail1
         val passHint = binding.tvHintPassword1
         val passRHint = binding.tvHintRepPassword1
-        val intent = Intent(this, RegisterActivity2::class.java)
+
+
+
 
         fun String.isEmailValid(): Boolean {
             return !TextUtils.isEmpty(this) && android.util.Patterns.EMAIL_ADDRESS.matcher(this).matches()
@@ -52,6 +54,11 @@ class RegisterActivity: AppCompatActivity() {
             val pass = userPass.text.toString().trim()
             val passR = userPassR.text.toString().trim()
             val agree = userAgree.isChecked
+            val intent = Intent(this, RegisterActivity2::class.java).apply {
+                putExtra("email", mail)
+                putExtra("password", pass)
+            }
+
             when {
                 (mail.isEmailValid()) && (pass == passR) && agree -> {
                     startActivity(intent)

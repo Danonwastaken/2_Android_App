@@ -8,4 +8,8 @@
     <color name="gentleGrayText">#B3000000</color>
     <color name="anotherGray">#667085</color>
     <color name="darkerGray">#404040</color>
+    <color name="allBlack">#101828</color>
+    <color name="darkPurple">#29183B</color>
+    <color name="gray">#D0D5DD</color>
+
 </resources>

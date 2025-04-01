@@ -5,17 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".SettingsFragment"
     android:orientation="vertical">
 
-
     <TextView
-        android:paddingTop="16dp"
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/font_montserrat"
-        android:text="Настройки"
+        android:paddingTop="16dp"
+        android:text="@string/profile"
         android:textColor="@color/allBlack"
         android:textFontWeight="700"
         android:textSize="16sp"
@@ -24,238 +22,246 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton2"
-        android:layout_width="match_parent"
-        android:layout_height="83dp"
-        android:layout_marginTop="40dp"
-        android:backgroundTint="@color/white"
-        android:drawableEnd="@drawable/ic_arrowright"
+    <View
+        android:id="@+id/view2"
+        android:layout_width="212dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:backgroundTint="@color/white"
         android:src="@drawable/ic_manavatar"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/view" />
-
-    <View
-        android:id="@+id/view"
-        android:layout_width="223dp"
-        android:layout_height="67dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/materialButton2"
-        app:layout_constraintStart_toStartOf="@id/materialButton2"
-        app:layout_constraintTop_toTopOf="@+id/materialButton2" />
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/font_montserrat"
         android:text="Иван Иванов"
-        android:textColor="@color/darkPurple"
-        android:textFontWeight="700"
-        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:textFontWeight="600"
+        android:textSize="20sp"
         android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/font_montserrat"
-        android:text="ivan@mtuci.ru"
-        android:textColor="@color/anotherGray"
+        android:text="@string/profile_join"
+        android:textColor="@color/grayText"
+        android:textFontWeight="400"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="342dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="37dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_montserrat"
+        android:text="@string/desc_email"
+        android:textColor="@color/grayText"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/mailTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_montserrat"
+        android:text="ivanov@mtuci.ru"
+        android:textColor="@color/darkerGray"
         android:textFontWeight="400"
         android:textSize="12sp"
         android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintStart_toStartOf="@+id/view3" />
 
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton"
+    <ImageView
+        android:id="@+id/divider1"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_divider1"
+        app:layout_constraintTop_toBottomOf="@id/view3" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="342dp"
         android:layout_height="40dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/white"
-        android:fontFamily="@font/font_montserrat"
-        android:drawableEnd="@drawable/ic_arrowright"
-        android:gravity="start|center_vertical"
-        android:text="Мои бронирования"
-        android:textColor="@color/darkPurple"
-        android:textFontWeight="500"
-        android:textSize="14sp"
-        android:textStyle="normal"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton2"
-        android:paddingStart="48dp"
-        tools:ignore="RtlSymmetry" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_settingsubertaxi"
-        app:layout_constraintBottom_toBottomOf="@+id/materialButton"
-        app:layout_constraintStart_toStartOf="@+id/materialButton"
-        app:layout_constraintTop_toTopOf="@+id/materialButton"
-        android:paddingStart="16dp"
-        tools:ignore="RtlSymmetry" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton3"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/white"
-        android:fontFamily="@font/font_montserrat"
-        android:drawableEnd="@drawable/ic_arrowright"
-        android:gravity="start|center_vertical"
-        android:text="Тема"
-        android:textColor="@color/darkPurple"
-        android:textFontWeight="500"
-        android:textSize="14sp"
-        android:textStyle="normal"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton"
-        android:paddingStart="48dp"
-        tools:ignore="RtlSymmetry" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_settingstheme"
-        app:layout_constraintBottom_toBottomOf="@+id/materialButton3"
-        app:layout_constraintStart_toStartOf="@+id/materialButton3"
-        app:layout_constraintTop_toTopOf="@+id/materialButton3"
-        android:paddingStart="16dp"
-        tools:ignore="RtlSymmetry" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton4"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/white"
-        android:fontFamily="@font/font_montserrat"
-        android:drawableEnd="@drawable/ic_arrowright"
-        android:gravity="start|center_vertical"
-        android:text="Уведомления"
-        android:textColor="@color/darkPurple"
-        android:textFontWeight="500"
-        android:textSize="14sp"
-        android:textStyle="normal"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton3"
-        android:paddingStart="48dp"
-        tools:ignore="RtlSymmetry" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_settingsbell"
-        app:layout_constraintBottom_toBottomOf="@+id/materialButton4"
-        app:layout_constraintStart_toStartOf="@+id/materialButton4"
-        app:layout_constraintTop_toTopOf="@+id/materialButton4"
-        android:paddingStart="16dp"
-        tools:ignore="RtlSymmetry" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton5"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/white"
-        android:fontFamily="@font/font_montserrat"
-        android:drawableEnd="@drawable/ic_arrowright"
-        android:gravity="start|center_vertical"
-        android:text="Подключить свой автомобиль"
-        android:textColor="@color/darkPurple"
-        android:textFontWeight="500"
-        android:textSize="14sp"
-        android:textStyle="normal"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton4"
-        android:paddingStart="48dp"
-        tools:ignore="RtlSymmetry" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_settingsbanknotes"
-        app:layout_constraintBottom_toBottomOf="@+id/materialButton5"
-        app:layout_constraintStart_toStartOf="@+id/materialButton5"
-        app:layout_constraintTop_toTopOf="@+id/materialButton5"
-        android:paddingStart="16dp"
-        tools:ignore="RtlSymmetry" />
-
-    <ImageView
-        android:id="@+id/divider"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/ic_divider"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/materialButton5" />
+        app:layout_constraintTop_toBottomOf="@+id/divider1" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton6"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/white"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/font_montserrat"
-        android:drawableEnd="@drawable/ic_arrowright"
-        android:gravity="start|center_vertical"
-        android:text="Помощь"
-        android:textColor="@color/darkPurple"
+        android:text="@string/desc_password"
+        android:textColor="@color/grayText"
         android:textFontWeight="500"
         android:textSize="14sp"
         android:textStyle="normal"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
-        android:paddingStart="48dp"
-        tools:ignore="RtlSymmetry" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_settingsquestions"
-        app:layout_constraintBottom_toBottomOf="@+id/materialButton6"
-        app:layout_constraintStart_toStartOf="@+id/materialButton6"
-        app:layout_constraintTop_toTopOf="@+id/materialButton6"
-        android:paddingStart="16dp"
-        tools:ignore="RtlSymmetry" />
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton7"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/font_montserrat"
-        android:drawableEnd="@drawable/ic_arrowright"
-        android:gravity="start|center_vertical"
-        android:text="Пригласи друга"
-        android:textColor="@color/darkPurple"
+        android:gravity="bottom"
+        android:padding="0dp"
+        android:text="@string/desc_changePassword"
+        android:textColor="@color/stylishPurple"
+        android:textFontWeight="400"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="@+id/view4" />
+
+
+    <ImageView
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_divider1"
+        app:layout_constraintTop_toBottomOf="@id/view4" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="342dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_montserrat"
+        android:text="@string/desc_gender"
+        android:textColor="@color/grayText"
         android:textFontWeight="500"
         android:textSize="14sp"
         android:textStyle="normal"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton6"
-        android:paddingStart="48dp"
-        tools:ignore="RtlSymmetry" />
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toTopOf="@+id/view5" />
 
-    <ImageView
+    <TextView
+        android:id="@+id/genderTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_settingsmail"
-        app:layout_constraintBottom_toBottomOf="@+id/materialButton7"
-        app:layout_constraintStart_toStartOf="@+id/materialButton7"
-        app:layout_constraintTop_toTopOf="@+id/materialButton7"
-        android:paddingStart="16dp"
-        tools:ignore="RtlSymmetry" />
+        android:fontFamily="@font/font_montserrat"
+        android:text="Мужской"
+        android:textColor="@color/darkerGray"
+        android:textFontWeight="400"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintStart_toStartOf="@+id/view5" />
+
+    <ImageView
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_divider1"
+        app:layout_constraintTop_toBottomOf="@id/view5" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="342dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_montserrat"
+        android:text="@string/desc_google"
+        android:textColor="@color/grayText"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/view6"
+        app:layout_constraintTop_toTopOf="@+id/view6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_montserrat"
+        android:text="@string/desc_None"
+        android:textColor="@color/darkerGray"
+        android:textFontWeight="400"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/view6"
+        app:layout_constraintStart_toStartOf="@+id/view6" />
+
+    <ImageView
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_divider1"
+        app:layout_constraintTop_toBottomOf="@id/view6" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="342dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/exitProfileMb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/font_montserrat"
+        android:paddingStart="0dp"
+        android:text="@string/desc_logout"
+        android:textColor="@color/grayText"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toTopOf="@+id/view7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

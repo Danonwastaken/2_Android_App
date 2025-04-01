@@ -95,6 +95,15 @@ class RegisterActivity3 : AppCompatActivity() {
         val buttonPrev = binding.ibPrev
         val photoChoosePassport = binding.tvUploadPhotoNear
 
+        val email = intent.getStringExtra("email")
+        val pass = intent.getStringExtra("password")
+        val lastname = intent.getStringExtra("lastname")
+        val namee = intent.getStringExtra("name")
+        val surname = intent.getStringExtra("surname")
+        val gender = intent.getStringExtra("gender")
+
+        val db = AppDataBase.getDb(this)
+
         ibAvatar.setOnClickListener {
             openGallery(pickAvatarLauncher)
             ibAvatar.visibility = INVISIBLE
@@ -119,6 +128,9 @@ class RegisterActivity3 : AppCompatActivity() {
                 val simpleDateFormat = SimpleDateFormat("dd/mm/yyyy", Locale.getDefault())
                 userDateGet.text = simpleDateFormat.format(Date(it).time)
             }
+            Toast.makeText(
+                this, gender,
+                Toast.LENGTH_LONG).show()
         }
 
         buttonPrev.setOnClickListener {
@@ -134,6 +146,14 @@ class RegisterActivity3 : AppCompatActivity() {
             when {
 
                 !TextUtils.isEmpty(numberr) && !TextUtils.isEmpty(dateGet) && licenseUri !=null && passportUri != null -> {
+                    val avatarString = avatarUri.toString()
+                    val userdb = UserDbEntity(null, email, pass, lastname, namee, surname, gender, avatarString)
+                    Toast.makeText(
+                        this, avatarString,
+                        Toast.LENGTH_LONG).show()
+                    Thread {
+                        db.getDao().insertItem(userdb)
+                    }.start()
                     startActivity(intent)
                 }
 
